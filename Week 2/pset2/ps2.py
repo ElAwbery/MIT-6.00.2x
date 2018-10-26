@@ -22,10 +22,7 @@ import pylab
 import math
 import time
 
-
 import tkinter
-
-
 
 class RobotVisualization(object):
     def __init__(self, num_robots, width, height, delay = 0.2):
@@ -134,10 +131,6 @@ class RobotVisualization(object):
         "Indicate that the animation is done so that we allow the user to close the window."
         tkinter.mainloop()
 
-
-
-
-
 # === Provided class Position
 class Position(object):
     """
@@ -181,7 +174,6 @@ class Position(object):
 
     def __str__(self):  
         return "(%0.2f, %0.2f)" % (self.x, self.y)
-
 
 # === Problem 1
 class RectangularRoom(object):
@@ -276,8 +268,7 @@ class RectangularRoom(object):
         """
         horizontal_position = math.floor(pos.getX())
         vertical_position = math.floor(pos.getY()) #int function truncates in wrong direction for negatives
-        return (horizontal_position, vertical_position) in self.tiles
-        
+        return (horizontal_position, vertical_position) in self.tiles       
 
 # === Problem 2
 class Robot(object):
@@ -304,8 +295,7 @@ class Robot(object):
         self.position = room.getRandomPosition() # sets initial position, a position object 
         self.direction = random.uniform(0, 360) # sets initial direction, a random angle, a float
         
-        room.cleanTileAtPosition(self.position)
-        
+        room.cleanTileAtPosition(self.position)      
 
     def getRobotPosition(self):
         """
@@ -349,7 +339,6 @@ class Robot(object):
         """
         raise NotImplementedError # don't change this!
 
-
 # === Problem 3
 
 class StandardRobot(Robot):
@@ -377,9 +366,7 @@ class StandardRobot(Robot):
             self.position = new_position
             self.room.cleanTileAtPosition(self.position)
         else:
-            self.direction = random.uniform(0, 360)
-            
-            
+            self.direction = random.uniform(0, 360)                
     
 Roomy = RectangularRoom(5, 7)
 Stan = StandardRobot(Roomy, 1.4)
@@ -395,9 +382,6 @@ Stan.updatePositionAndClean()
 
 # Uncomment this line to see your implementation of StandardRobot in action!
 #testRobotMovement(StandardRobot, RectangularRoom)
-
-
-
 
 # === Problem 4
    
@@ -443,8 +427,7 @@ def runSimulation(num_robots, speed, width, height, min_coverage, num_trials,
                 continue
         # anim.done()
     # return mean
-    return sum(results)/len(results)
-       
+    return sum(results)/len(results)   
     
 # tests   
 # num_robots, speed, width, height, min_coverage, num_trials,robot_type
@@ -466,7 +449,6 @@ print(runSimulation(3, 5.0, 20, 20, 1.0, 70, StandardRobot))
 # tests   
 # num_robots, speed, width, height, min_coverage, num_trials,robot_type    
 '''    
-
 
 # === Problem 5
 '''
@@ -511,30 +493,29 @@ class RandomWalkRobot(Robot):
             self.direction = random.uniform(0, 360)
             
 # test
-# runSimulation(1, 1.5, 15, 20, 1.0, 1, StandardRobot)  
+runSimulation(1, 1.5, 15, 20, 1.0, 1, StandardRobot)  
 # 2399 time-ticks, 299 tiles cleaned, 100% clean
             
-# print(runSimulation(1, 1.5, 5, 10, 1.0, 1, StandardRobot))
+print(runSimulation(1, 1.5, 5, 10, 1.0, 1, StandardRobot))
 # 304 ticks, code only
 # with visuals, 410 ticks
-# print(runSimulation(1, 1.5, 5, 10, 1.0, 1, RandomWalkRobot))  
+print(runSimulation(1, 1.5, 5, 10, 1.0, 1, RandomWalkRobot))  
 # 472 ticks, code only
 # with visuals, 537 ticks. Stays local to one area for longer than standard robot. 
 
-# print(runSimulation(1, 1.5, 5, 10, 0.9, 1, StandardRobot))
+print(runSimulation(1, 1.5, 5, 10, 0.9, 1, StandardRobot))
 # 222 ticks 
-# print(runSimulation(1, 1.5, 5, 10, 0.9, 1, RandomWalkRobot))
+print(runSimulation(1, 1.5, 5, 10, 0.9, 1, RandomWalkRobot))
 # 436 ticks 
             
-# print(runSimulation(1, 1.5, 5, 10, 0.5, 1, StandardRobot))
+print(runSimulation(1, 1.5, 5, 10, 0.5, 1, StandardRobot))
 # 54 ticks, seemed
-# print(runSimulation(1, 1.5, 5, 10, 0.5, 1, RandomWalkRobot))
+print(runSimulation(1, 1.5, 5, 10, 0.5, 1, RandomWalkRobot))
 # 86 ticks. 
 
 # As the proportion of tiles to be cleaned gets smaller, the standard robot performs relatively quicker.
 # The tiles cleaned by randomwalkrobot have more connected edges and are local to each other, whereas
 # the tiles cleaned by standard robot are more dispersed. 
-
 
 # === Problem 6
 # NOTE: If you are running the simulation, you will have to close it 
@@ -573,7 +554,6 @@ def showPlot1(title, x_label, y_label):
     pylab.ylabel(y_label)
     pylab.show()
     
-    
 # showPlot1('standard vs. random', 'number of robots', 'time to complete')
         
 def showPlot2(title, x_label, y_label):
@@ -595,8 +575,7 @@ def showPlot2(title, x_label, y_label):
     pylab.legend(('StandardRobot', 'RandomWalkRobot'))
     pylab.xlabel(x_label)
     pylab.ylabel(y_label)
-    pylab.show()
-    
+    pylab.show()    
 
 showPlot2('standard vs. random', 'aspect ratios', 'time to complete')
 
