@@ -224,7 +224,7 @@ def simulationWithoutDrug(numViruses, maxPop, maxBirthProb, clearProb,
     pylab.show()
 
 # tests
-'''
+
 simulationWithoutDrug(1, 1000, 1.0, 0.0, 30)
 simulationWithoutDrug(1, 10000, 1.0, 0.0, 30)
 '''
@@ -239,7 +239,7 @@ simulationWithoutDrug(3, 1000, 0.7, 0.3, 100)
 simulationWithoutDrug(1, 10, 1.0, 0.0, 1)
 simulationWithoutDrug(100, 200, 0.2, 0.8, 1)
 simulationWithoutDrug(1, 90, 0.8, 0.1, 1)
-'''
+
 
 # PROBLEM 3
 
@@ -382,9 +382,7 @@ class ResistantVirus(SimpleVirus):
        
         else:
             raise NoChildException
-                               
-                
-'''            
+                                          
 # tests
             
 # create a resistances dict
@@ -405,7 +403,6 @@ virus3.reproduce(2.0, drugs)
 
 virus4 = ResistantVirus(1.0, 0.0, {'drug1':True, 'drug2': True, 'drug3': True, 'drug4': True, 'drug5': True, 'drug6': True}, 0.5)          
 virus4.reproduce(0, [])
-'''
 
 class TreatedPatient(Patient):
     """
@@ -552,7 +549,6 @@ patient.addPrescription("drug1")
 # Expect total population to be the resistant population plus 1
 # now passed
 
-'''
 womby_recovering = TreatedPatient([SimpleSimon, virus1, virus3], 200)
 womby_recovering.addPrescription('goop')
 womby_recovering.addPrescription('oogy')
@@ -566,7 +562,7 @@ wr_druglist = womby_recovering.getPrescriptions()
 womby_recovering.getResistPop(wr_druglist)
 
 womby_recovering.update()
-'''
+
 
 virus1 = ResistantVirus(1.0, 0.0, {"drug1": True}, 0.0)
 virus2 = ResistantVirus(1.0, 0.0, {"drug1": False, "drug2": True}, 0.0)
