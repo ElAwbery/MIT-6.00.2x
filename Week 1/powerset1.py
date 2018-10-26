@@ -70,8 +70,6 @@ def base_three(num, digits):
         return ''
     else:
         return base_three(num//3, digits - 1) + str(num%3)
-
-
   
 # Using ideas from from the net using itertools, this the shortest length code I could get it down to:   
     
@@ -87,11 +85,3 @@ def cool_powerset(bag):
     return powerset
 
 print(cool_powerset(bag))
-
-
- 
-    
-    
-    
-    
-    
