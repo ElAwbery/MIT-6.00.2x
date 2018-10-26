@@ -3,10 +3,9 @@
 """
 Created on Wed Sep  5 17:18:49 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 import pylab as plt
-
 
 mySamples = []
 myLinear = []
@@ -21,13 +20,11 @@ for i in range (0, 30):
     myCubic.append(i**3)
     myExponential.append(1.5**i)
 
-
 # first trial     
 plt.plot(mySamples, myLinear)
 plt.plot(mySamples, myQuadratic)
 plt.plot(mySamples, myCubic)
 plt.plot(mySamples, myExponential)
-
 
 plt.figure('linear comparisons')  # figure creates a separate window frame with this name, then plt calls what to put in it. 
 plt.clf()
@@ -47,13 +44,10 @@ plt.ylabel('functions')
 plt.ylim(0, 800)
 plt.legend(loc = 'upper left')
 
-
 plt.clf () # will clear a frame before you use it with the same name again. 
-
 
 plt.figure('myExpo')
 plt.plot(mySamples, myExponential)
-
 
 def display_retire(monthlies, rate, terms):
     """
@@ -81,59 +75,7 @@ def retire(monthly, rate, terms):
         base += [i]
         savings += [savings[-1] * (1+mRate) + monthly]
     
-    return base, savings
-        
+    return base, savings    
         
 display_retire([50, 100, 250, 500, 1000], .05, 20*12)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
+ 
