@@ -71,7 +71,6 @@ and then picks Callie as the last cow. Since they will both fit, this makes the 
 The final result then is [["Jesse", "Maybel"], ["Maggie", "Callie"]].
 '''
 
-
 def greedy_cow_transport(cows,limit=10):
     
     """
@@ -95,7 +94,6 @@ def greedy_cow_transport(cows,limit=10):
     transported on a particular trip and the overall list containing all the
     trips
     """
-    
     
     all_trips = []
     next_trip = []
@@ -153,7 +151,6 @@ lists of trips.
  - All the cows have unique names.
  - If multiple cows weigh the same amount, break ties arbitrarily.
  - The spaceship has a cargo weight limit (in tons), which is passed into the function as a parameter.
-
 
 Example: 
     
@@ -216,17 +213,11 @@ def within_weight_limit(cows, partition, limit):
             return False
         
     return True
-    
-    
-    
+   
 # test
 cows = load_cows("ps1_cow_data.txt")
 
 brute_force_cow_transport(cows, limit = 10)
-
-
-
-
 
 '''
 You can measure the time a block of code takes to execute using the time.time() function as follows. 
@@ -289,7 +280,6 @@ def compare_cow_transport_algorithms():
             next_trip = []
             next_trip_weight = 0
             
-        
         return all_trips
     
     end = time.time()
@@ -310,8 +300,6 @@ def compare_cow_transport_algorithms():
                 
                 if (best_yet == None) or len(partition) < len(best_yet): 
                     best_yet = partition
-                    
-        
                
         return best_yet
             
