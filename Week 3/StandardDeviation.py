@@ -3,14 +3,13 @@
 """
 Created on Fri Sep 14 10:51:27 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 '''
 Write a function, stdDevOfLengths(L) that takes in a list of strings, L, and outputs the standard deviation 
 of the lengths of the strings. 
 Return float('NaN') if L is empty.
 '''
-
 
 def stdDevOfLengths(L):
     """
@@ -36,10 +35,7 @@ def stdDevOfLengths(L):
      
     return standard_deviation
 
-
 print(stdDevOfLengths([]))
-
-
 
 # Test cases:
 empty = []
@@ -57,13 +53,5 @@ print(stdDevOfLengths(L3))
 L4 = ['...', '....', '.....']
 print(stdDevOfLengths(L4))
 
-
 L5 = ['..........', '....', '............', '...............', '....................', '.....']
 print(stdDevOfLengths(L5))
-
-
-
-
-
-
-
