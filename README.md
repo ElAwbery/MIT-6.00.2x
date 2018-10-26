@@ -22,9 +22,9 @@ Unit 3:
  
 Unit 4 is all about experimental data and unit 5 is a basic introduction to machine learning and statistical fallacies. 
 
-In this repo each course week folder contains exercises from the online course, sometimes exercises from the chapters in the textbook covering the same material and my attempts at and solutions for the problem sets. 
+Much of the math and the programming syntax was familiar. What was great about this course, for me, was application of math problems, combinations and permutations for example, to real life examples through programming. 
 
-Much of the math and the programming syntax was familiar. What was great about this course, for me, was application of math problems, combbinations and permutations for example, to real life examples through programming. 
+Each course week folder here contains exercises from the online course, sometimes exercises from the chapters in the textbook covering the same material and my attempts at and solutions for the problem sets. 
 
 
 
