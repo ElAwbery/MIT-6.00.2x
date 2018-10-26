@@ -3,18 +3,16 @@
 """
 Created on Fri Sep  7 13:26:50 2018
 
-@author: Charlie
+@author: ElAwbery
 """
-'''
-import random
 
+import random
 
 # random generator of even numbers
 
 def genEven():
 
     return random.randrange(10, 21, 2)
-
     
 # deterministic generator of even numbers
 
@@ -25,9 +23,7 @@ def determinist():
         return even
     
 print(determinist())
-'''    
-'''
-import random
+
 
 mylist = []
 
@@ -41,9 +37,6 @@ for i in range(random.randint(1, 10)):
         mylist.append(number)
         
 print(mylist)
-'''
-'''
-import random
 
 # Code Sample A
 mylist = []
@@ -55,9 +48,6 @@ for i in range(random.randint(1, 10)):
         if number not in mylist:
             mylist.append(number)
 print(mylist)
-'''
-import random
-
 
 mylist = []
 
@@ -68,40 +58,3 @@ for i in range(random.randint(1, 10)): # for i in range 7
         mylist.append(number)
     print(mylist)
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
