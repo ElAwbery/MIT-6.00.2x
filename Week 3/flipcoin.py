@@ -1,7 +1,6 @@
 import pylab, random
 random.seed(0)
 
-
 '''
 We are handed a biased coin and want to infer the probability that it lands on heads. 
 Use the code provided for CLT, along with the provided helper function flipCoin, to generate 
@@ -9,9 +8,8 @@ confidence intervals for the probability of heads.
 You should only need to change a few lines of code.
 '''
 
-
 ####################
-## Helper functions#
+## Helper functions
 ####################
 def flipCoin(numFlips):
     '''
@@ -27,7 +25,6 @@ def flipCoin(numFlips):
     flips = random.sample(all_flips, numFlips)
     return [int(flip == 'H') for flip in flips]
 
-
 def getMeanAndStd(X):
     mean = sum(X)/float(len(X))
     tot = 0.0
@@ -35,7 +32,6 @@ def getMeanAndStd(X):
         tot += (x - mean)**2
     std = (tot/len(X))**0.5
     return mean, std
-
     
 #############################
 ## CLT Hands-on		     #
@@ -59,7 +55,6 @@ def clt():
         x, y = getMeanAndStd(sampleMeans)
         meanOfMeans.append(x)
         stdOfMeans.append(y)
- 
 
 clt()
 pylab.figure(1)
