@@ -116,19 +116,13 @@ class Climate(object):
         assert day in self.rawdata[city][year][month], "provided day is not available"
         return self.rawdata[city][year][month][day]
 
-
-
 """
 End helper code
 """
-'''
+
 Seattle = Climate("data.csv")
-
 Seattle_1982  = Seattle.get_yearly_temp('SEATTLE', 1982)
-
 Seattle_8_14_1993 = Seattle.get_daily_temp('SEATTLE', 8, 14, 1993)
-'''
-
 
 # Problem 1
 def generate_models(x, y, degs):
@@ -156,13 +150,8 @@ def generate_models(x, y, degs):
     return degree_coefficients
     
 # test:
-
-
 model1 = generate_models([1.0, 2.0, 3.0], [13.5, 15.25, 17.8], [1])
 
-    
-    
-    
 # Problem 2
 def r_squared(y, estimated):
     """
@@ -184,7 +173,6 @@ def r_squared(y, estimated):
     # mean of squares
     mean_error = error/len(y)
     
-    
     sum_of_variance = 0
     for index in range(len(y)):
         sum_of_variance += (y[index] - y_mean)**2
@@ -193,16 +181,13 @@ def r_squared(y, estimated):
     
     r_squared = 1-(mean_error/observed_variance)
     
-    
     return r_squared
 
 # test
-
 print(r_squared([32.0, 42.0, 31.3, 22.0, 33.0], [32.3, 42.1, 31.2, 22.1, 34.0]))
 print(r_squared([4.4, 5.5, 6.6], [4.4, 5.5, 6.6]))
 print(r_squared([-3.1, -4.1, -9.2, 10.1], [-2.1, -6.1, 9.2, 20.1]))
 print(r_squared([-3.1, -4.1, -9.2, 10.1, 9.1, 4.5], [-1.1, -2.1, -7.2, 11.1, 11.1, 5.5]))
-
 
 
 # Problem 3
@@ -248,7 +233,6 @@ def evaluate_models_on_training(x, y, models):
     pylab.plot(x_vals, model_y_vals[0], 'r', label = 'linear fit')
     
     pylab.show()
-
 
 ### Begining of program
 raw_data = Climate('data.csv')
