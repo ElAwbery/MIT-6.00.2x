@@ -15,7 +15,6 @@ you cannot index into a generator! For instance, the recommended way to call get
 
 '''
 
-
 #From codereview.stackexchange.com                    
 def partitions(set_):
     if not set_:
@@ -28,7 +27,6 @@ def partitions(set_):
             i >>= 1
         for b in partitions(parts[1]):
             yield [parts[0]]+b
-
 
 # This is a helper function that will fetch all of the available 
 # partitions for you to use for your brute force algorithm.
