@@ -3,8 +3,9 @@
 """
 Created on Sat Sep 15 13:17:55 2018
 
-@author: Charlie
+@author: ElAwbery
 """
+
 import random
 
 def noReplacementSimulation(numTrials):
@@ -47,7 +48,4 @@ trial_numbers_to_test = [10, 100, 1000, 10000, 100000, 1000000, 10000000]
 
 for trial in trial_numbers_to_test:
     print(noReplacementSimulation(trial))
-    
-    
-    
     
