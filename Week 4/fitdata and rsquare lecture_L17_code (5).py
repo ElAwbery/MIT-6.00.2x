@@ -56,7 +56,6 @@ def tryFits1(fName):
                + str(round(rSquare(meanHeights, altitudes), 4)))
     pylab.legend()
 
-
 def testErrors(ntrials=10000,npts=100):
     results = [0] * ntrials
     for i in range(ntrials):
@@ -72,7 +71,6 @@ def testErrors(ntrials=10000,npts=100):
 
 ##testErrors()
 ##pylab.show()
-
 
 def fitData(fileName):
     xVals, yVals = getData(fileName)
@@ -197,8 +195,5 @@ def tryFits(fName):
 ##tryFits('launcherData.txt')
 ##pylab.show()
 
-
 ##tryFits1('launcherData.txt')
 ##pylab.show()
-
-
