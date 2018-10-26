@@ -4,11 +4,7 @@
 
 import math
 import time
-
-
 import tkinter
-
-
 
 class RobotVisualization(object):
     def __init__(self, num_robots, width, height, delay = 0.2):
@@ -116,6 +112,3 @@ class RobotVisualization(object):
     def done(self):
         "Indicate that the animation is done so that we allow the user to close the window."
         tkinter.mainloop()
-
-
-
