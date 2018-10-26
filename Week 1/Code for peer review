@@ -6,7 +6,7 @@ Created on Mon Sep  3 12:27:49 2018
 @author: ElAwbery
 """
 
-# Hi, for info this is my original solution to the power set problem. 
+# This is my original solution to the power set problem. 
 
 def BigPowerSet(items):
     
