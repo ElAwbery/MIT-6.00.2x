@@ -3,19 +3,17 @@
 """
 Created on Fri Sep 14 12:51:33 2018
 
-@author: Charlie
+@author: ElAwbery
 """
-import random
 
+import random
 import pylab
 
-'''
-di'st = []
+dist = []
 
 for i in range(10000):
     dist.append(random.gauss(0, 30))
-    pylab.hist(dist, 30)
-'''    
+    pylab.hist(dist, 30)    
 
 def getMeanAndStandard(X):
     mean = sum(X)/float(len(X))
@@ -36,11 +34,6 @@ print(factor)
 
 pylab.figure()
 pylab.hist(L, weights = factor)
-
-
-
-
-
    
 pylab.show()
 
