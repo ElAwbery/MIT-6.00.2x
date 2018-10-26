@@ -3,7 +3,7 @@
 """
 Created on Sun Sep  2 11:52:49 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 
 # generate all combinations of N items
