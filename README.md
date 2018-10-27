@@ -3,7 +3,7 @@ Introduction to computational thinking and data science
 
 I started [this course](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-7) six weeks before the end of course deadline and worked through the ontent in four weeks, using the recommended [course text book](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-second-edition) as a backup. Most of the statistics and math content was straightforward as I already know basic statistics. 
 
-I took a week break to get married and fulfil various social obligations, then crammed for the mid-term and final exams, taking the final on the last day before the deadline. This was an intense experience, self-imposed, It was useful to know that I could perform under pressure, taking the exams without having practiced as much as I would have liked. My final course grade was 95%. I was pleased, given that I took the exams exhausted and stressed and felt like I was coding the last questions in my sleep. 
+I took a week break to get married and fulfil various social obligations, then crammed for the mid-term and final exams, taking the final on the last day before the deadline. This was an intense experience. I wanted to complete the course before the deadline and it was useful to know that I could perform under pressure, taking the exams without having practiced as much as I would have liked. My final course grade was 95%. 
 
 The course divides into five units with a mid-term quiz and final exam. Each of the first four units contain three lecutures with videos and finger exercises and a problem set. The fifth unit has two lectures and no problem set. 
 
