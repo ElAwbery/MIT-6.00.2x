@@ -22,7 +22,7 @@ Unit 3:
  
 Unit 4 is all about experimental data and unit 5 is a basic introduction to machine learning and statistical fallacies. 
 
-Much of the math and the programming syntax was familiar. What was great about this course for me was application of math problems such as combinations and permutations to real life examples through programming. This is the first time I used matplotlib and plotting tools in Python. Check out some of my plots in [week 2.](https://github.com/ElAwbery/MIT-6.00.2x/blob/master/Week%202/linear_comparisons.png )
+Much of the math and the programming syntax was familiar. What was great about this course for me was application of math problems such as combinations and permutations to real life examples through programming. This is the first time I used matplotlib and plotting tools in Python. Check out some of my plots in [week 2.](https://github.com/ElAwbery/MIT-6.00.2x/tree/master/Week%202)
 I loved the problem set for week 3, a [simulation of the spread of a virus in patients](https://github.com/ElAwbery/MIT-6.00.2x/blob/master/Week%203/ProblemSet3%203/ps3b.py) given different properties of medications applied and viral resistance. 
 
 Each course week folder here contains exercises from the online course, sometimes exercises from the chapters in the textbook covering the same material and my attempts at and solutions for the problem sets. 
