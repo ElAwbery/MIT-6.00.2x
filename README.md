@@ -1,7 +1,7 @@
 # MIT-6.00.2x
 Introduction to computational thinking and data science: final course grade 95%.
 
-I started [this course](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-7) six weeks before the end of course deadline and worked through the ontent in four weeks, using the recommended [course text book](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-second-edition) as a backup. Most of the statistics and math content was straightforward as I already know basic statistics. 
+I started [this course](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-7) six weeks before the end of course deadline and worked through the content in four weeks, using the recommended [course text book](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-second-edition) as a backup. Most of the statistics and math content was straightforward as I already know basic statistics. 
 
 I took a week break then crammed in the final week for the two exams, taking the final on the last day before the deadline. I wanted to complete the course before the deadline and it was useful to know that I could perform under pressure, taking the exams without having practiced as much as I would have liked.  
 
